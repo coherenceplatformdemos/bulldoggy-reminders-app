@@ -1,0 +1,4 @@
+backend:
+  type: "backend"
+  dev: ["uvicorn", "app.main:app", "--reload", "--port", "$PORT", "--host", "0.0.0.0"]
+  prod: ["uvicorn", "app.main:app", "--reload", "--port", "$PORT", "--host", "0.0.0.0"]
